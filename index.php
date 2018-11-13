@@ -24,15 +24,28 @@
 
     //Thuat toan tim kiem tuyen tinh
 
-    $arr = [321 , 312, 3, 4, 5, 45, 56, 5, 7, 6, 787, 8, 7, 2];
+//    $arr = [321 , 312, 3, 4, 5, 45, 56, 5, 7, 6, 787, 8, 7, 2];
+//
+//    $find = '5';
+//
+//    for ($i = 0; $i <= count($arr); $i ++) {
+//        if ($arr[$i] === $find) {
+//            echo 'So can tim '. $find . ' nam o vi tri ' . $i . '</br>';
+//        }
+//        return false;
+//    }
+    // Ky thuat dat linh canh
 
-    $find = '5';
-
-    for ($i = 0; $i <= count($arr); $i ++) {
-        if ($arr[$i] === $find) {
-            echo 'So can tim '. $find . ' nam o vi tri ' . $i . '</br>';
+    function datLinhCanh($a, $b, $c) {
+        $max = $a;
+        if ($max < $b) {
+            $max = $b;
         }
-        return false;
+        if ($max < $c) {
+            $max = $c;
+        }
+        echo $max;
     }
 
+    datLinhCanh(79, 19, 44);
 ?>
