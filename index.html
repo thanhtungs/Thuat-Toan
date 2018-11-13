@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+</head>
+
+<body>
+    <script>
+        let bubbleSort = (arr) => {
+            for (let i = 0; i <= arr.length -1; i++) {
+                for (let j = i + 1; j <= arr.length; j++) {
+                    if (arr[i] > arr[j]) {
+                        let tmp = arr[j];
+                        arr[j] = arr[i];
+                        arr[i] = tmp;
+                    }
+                }
+            }
+
+            for (let i = 0; i < arr.length; i++) {
+                document.write(arr[i] + ' ');
+            }
+        }
+        ;
+        let arrayHihi = [9, 0, 7, 12, 34, 8, 39, -90];
+
+        bubbleSort(arrayHihi);
+    </script>
+</body>
+
+</html>
